@@ -1,0 +1,6 @@
+Possibly caused by permission issues when downloading python versions
+
+1. Restart VSCode and try exporting ipynb file
+2. If nbconvert exists, run jupyter nbconvert <fileName>.ipynb --to html
+3. pip uninstall nbconvert, pip install nbconvert, try exporting or run previous command again
+   - If issue with permissions, add "sudo" before install command 
