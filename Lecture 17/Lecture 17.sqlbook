@@ -63,6 +63,7 @@ CREATE TABLE drivers(
 
 Add rows to table
 -- SQLBook: Code
+-- Active: 1680027046439@@127.0.0.1@5432@postgres@public
 -- "INSET INTO" adds rows with VALUES ... to the bottom of the table
 -- In SQL different lines need to be separated by a semicolon ";"
 -- You write system commands in capital letters to easily distinguish
@@ -98,7 +99,8 @@ Try it yourself!
 -- Add your name/nationality and your neighbors'
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
-
+INSERT INTO drivers  VALUES (5, 'Foo', 'American',20);
+INSERT INTO drivers  VALUES (6, 'Bar', 'Asian',20);
 
 
 -- SQLBook: Markup
@@ -186,6 +188,9 @@ Try it yourself!
 with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
+SELECT nationality, driver_id
+FROM drivers
+WHERE victories > 60;
 
 
 
